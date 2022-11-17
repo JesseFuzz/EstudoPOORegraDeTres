@@ -14,7 +14,12 @@ public class Historic {
     }
 
     public void addCalcExample(CalcExample calcExample){
+
         this.calcExamples.add(calcExample);
+    }
+
+    public double getTotalCalcs(){
+        return this.calcExamples.size();
     }
 
 
@@ -24,6 +29,7 @@ public class Historic {
                 "id=" + id +
                 ", time=" + time +
                 ", calcExamples=" + calcExamples +
+                "total: " + this.getTotalCalcs() +
                 '}';
     }
 
